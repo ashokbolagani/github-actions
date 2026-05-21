@@ -1,0 +1,11 @@
+name: davi-workflow
+on: workflow_dispatch
+jobs:
+  rapid-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build it
+        run: echo this is dispatch
+      - name: rapid with:
+        run: echo clear it  
+        
