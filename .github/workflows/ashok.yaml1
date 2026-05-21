@@ -1,0 +1,11 @@
+name: java
+on: workflow_dispatch
+jobs:
+  file-operations:
+    runs-on:
+    steps:
+      - name: creating a file
+        run: echo iam ashokkumar > devops.txt
+      - name: my show
+        run: echo iam a showman
+  
