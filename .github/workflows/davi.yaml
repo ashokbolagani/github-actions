@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: build it
         run: echo this is dispatch
-      - name: rapid with:
+      - name: rapid with
         run: echo clear it  
         
