@@ -1,0 +1,10 @@
+name: my-workflow
+on: push
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello disply ashok
+        run: echo "display tiger name ashok"
+
+    
