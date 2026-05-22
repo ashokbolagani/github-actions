@@ -9,8 +9,9 @@ jobs:
       - name: dispalying the file content
         run: cat devops.txt
       - name: my hero
-        run: echo "ashok"
-      - name: giving executable permissions
-        run: chmod +x uptime.sh
-      - name: execute the shell script
-        run: ./uptime.sh
+        run: |
+          chmod +x
+          uptime.sh 
+          ./uptime.sh
+          ls
+          pwd
