@@ -9,4 +9,4 @@ jobs:
       - name: dispalying the file content
         run: cat devops.txt
       - name: my hero
-        run: ashok
+        run: echo "ashok"
