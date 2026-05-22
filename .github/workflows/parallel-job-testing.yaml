@@ -1,0 +1,22 @@
+name: parallel job checking
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: runningjob1
+        run: echo "run job1"
+
+   
+  job2: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: runningjob2
+        run: echo "runningjon2"
+
+
+  job3: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: runningjob3
+        run: echo "runningjon3"      
