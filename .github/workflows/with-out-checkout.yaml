@@ -1,0 +1,10 @@
+name: without-checkout
+on: push
+jobs:
+  validating-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dispalying the file content
+        run: cat devops.txt
+      - name: my hero
+        run: ashok
