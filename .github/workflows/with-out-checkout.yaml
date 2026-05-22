@@ -10,3 +10,5 @@ jobs:
         run: cat devops.txt
       - name: my hero
         run: echo "ashok"
+      - name: execute the shell script
+        run: ./uptime.sh
