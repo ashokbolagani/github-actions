@@ -10,8 +10,7 @@ jobs:
         run: cat devops.txt
       - name: my hero
         run: |
-          chmod +x
-          uptime.sh 
+          chmod +x uptime.sh
           ./uptime.sh
           ls
           pwd
