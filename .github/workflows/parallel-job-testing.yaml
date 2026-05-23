@@ -10,6 +10,7 @@ jobs:
    
   job2: 
     runs-on: ubuntu-latest
+    needs: job1
     steps:
       - name: runningjob2
         run: echo "runningjon2"
@@ -17,6 +18,7 @@ jobs:
 
   job3: 
     runs-on: ubuntu-latest
+    needs: job2
     steps:
       - name: runningjob3
         run: echo "runningjon3"      
