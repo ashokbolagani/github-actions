@@ -14,7 +14,7 @@ jobs:
            echo "never compare with $king is danger from $city"
     step2:
       - name: step-level2
-        run: king is $king city is $city
+        run: echo "king is $king city is $city"
       
   
   
