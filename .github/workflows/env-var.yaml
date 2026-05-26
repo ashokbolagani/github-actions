@@ -12,9 +12,9 @@ jobs:
         run: |
            echo "the jungle king is $king from $city"
            echo "never compare with $king is danger from $city"
-    step2:
-     - name: step-level2
-       run: echo "king is $king city is $city"
+           
+      - name: step-level2
+        run: echo "king is $king city is $city"
       
   
   
