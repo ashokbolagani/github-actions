@@ -4,14 +4,14 @@ on:
 jobs:
   test-job:
     runs-on: ubuntu-latest
-steps:
-  - name: en-var 
-    env:
-      king: ashok
-      city: repalle
-    run: |
-      echo "the jungle king is $king from $city"
-      echo "never compare with $king is dangaer from $city:"
+    steps:
+      - name: step-level
+        env:
+          king: ashok
+          city: repalle
+        run: |
+           echo "the jungle king is $king from $city"
+           echo "never compare with $king is danger from $city"
       
       
   
