@@ -1,0 +1,12 @@
+name: without concurrency
+on:
+  workflow_dispatch: 
+
+jobs:
+  con-test:
+    runs-on: uubuntu-latest
+    steps: 
+      - run: echo "running workflow"
+      - run: sleep 300
+      - run: echo "finished"
+  
