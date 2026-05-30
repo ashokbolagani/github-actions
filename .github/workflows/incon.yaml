@@ -1,0 +1,13 @@
+name: in concurrency
+on: workflow_dispatch
+
+concurrency: 
+  cancel-in-progress: true
+jobs:
+  testcon:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " test incon"
+      - run: sleep 300
+      - run: echo "finish task"
+    
