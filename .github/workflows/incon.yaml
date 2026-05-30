@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 concurrency: 
   group: main-branch-group
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   testcon:
     runs-on: ubuntu-latest
