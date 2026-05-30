@@ -2,6 +2,7 @@ name: in concurrency
 on: workflow_dispatch
 
 concurrency: 
+  group: main-branch-group
   cancel-in-progress: true
 jobs:
   testcon:
