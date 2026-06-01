@@ -8,9 +8,9 @@ jobs:
 
     steps:
       - name: start
-        run: echo "jobs started
+        run: echo "jobs started"
       - name: long sleep
-        run: sleep 400 mins
+        run: sleep 400 
       - name: job ended
         run: echo "job finished"
       
