@@ -1,0 +1,16 @@
+name: tomeout-jobs
+on: 
+  workflow_dispatch:
+jobs:
+  timeout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5 
+
+    steps:
+      - name: start
+        run: echo "jobs started
+      - name: long sleep
+        run: sleep 400 mins
+      - name: job ended
+        run: echo "job finished"
+      
