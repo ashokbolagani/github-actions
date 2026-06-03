@@ -1,0 +1,12 @@
+name: matrix-test
+on: workflow_dispatch
+jobs:
+  testjob:
+    runs-on: ${{ matrix.OS }}
+    strategy:
+      matrix: 
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: print OS
+        run: echo "printing os ${{ matrix.OS }}"
+  
