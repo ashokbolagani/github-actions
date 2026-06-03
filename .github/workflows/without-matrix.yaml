@@ -3,7 +3,7 @@ on:
   workflow_dispatch: 
 jobs:
   testjob:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: print Os
         run: echo "running on ubuntu os"
