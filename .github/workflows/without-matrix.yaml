@@ -1,0 +1,14 @@
+name: without-matrix
+on:
+  workflow_dispatch: 
+jobs:
+  testjob:
+    runs-on: ubantu-latest
+    steps:
+      - name: print Os
+        run: echo running on ubuntu os
+  testjob2:
+    runs-on: windows-latest
+    steps:
+      - name: print Os
+        run: echo running on windows os
