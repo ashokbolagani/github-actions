@@ -6,9 +6,9 @@ jobs:
     runs-on: ubantu-latest
     steps:
       - name: print Os
-        run: echo running on ubuntu os
+        run: echo "running on ubuntu os"
   testjob2:
     runs-on: windows-latest
     steps:
       - name: print Os
-        run: echo running on windows os
+        run: echo "running on windows os"
