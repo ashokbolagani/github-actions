@@ -1,6 +1,6 @@
 name: docker matrix
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
 jobs: 
   docker-job:
     runs-on: ${{ matrix.os }}
@@ -12,6 +12,6 @@ jobs:
       - name: Docker details
         run: docker info
       - name: Run image
-        run: docker run ${{ matrix.os }}
+        run: docker run ${{ matrix.images }}
     
     
