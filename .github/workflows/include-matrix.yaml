@@ -9,7 +9,7 @@ jobs:
         node: [16]
         include:
           - os: ubuntu-latest
-            node: 16
+            node: 18
             message: optimized-build
     steps:
       - run: |
