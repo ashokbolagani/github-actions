@@ -11,6 +11,6 @@ jobs:
     needs: build 
     if: ${{ github.ref == 'refs/head/main' }}
     steps:
-      - run: deploying to production
+      - run: echo "deploying to production"
   
   
