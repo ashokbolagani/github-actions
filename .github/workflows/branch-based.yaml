@@ -1,0 +1,16 @@
+name: branch based env
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: building app
+        run: echo "building an application"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build 
+    if: ${{ github.ref == 'refs/head/main' }}
+    steps:
+      - run: deploying to production
+  
+  
